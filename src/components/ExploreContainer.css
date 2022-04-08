@@ -1,0 +1,40 @@
+.container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+#canvas {
+  width: 40rem;
+  position: absolute;
+  z-index: 100;
+  left: -0.7rem;
+  top: -3rem;
+}
+
+#resetButton {
+  position: absolute;
+  z-index: 1000;
+  top: -5rem;
+  left: 7.5rem;
+  font-size: 30px;
+}
