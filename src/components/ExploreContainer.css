@@ -23,12 +23,19 @@
   text-decoration: none;
 }
 
-#canvas {
-  width: 40rem;
+#divWheel #wheel #canvas {
+  width: 50rem;
   position: absolute;
   z-index: 100;
-  left: -0.7rem;
-  top: -3rem;
+  left: -2.89em;
+  top: -10rem;
+}
+#divWheelAndroid #wheel #canvas {
+  width: 50rem;
+  position: absolute;
+  z-index: 100;
+  left: -1.89em;
+  top: -8rem;
 }
 
 #resetButton {
@@ -37,4 +44,123 @@
   top: -5rem;
   left: 7.5rem;
   font-size: 30px;
+}
+#resetButtonAndroid {
+  position: absolute;
+  z-index: 1000;
+  top: -5rem;
+  left: 9.5rem;
+  font-size: 30px;
+}
+
+.chipChoise {
+  padding: 1.2rem;
+  font-size: 25px;
+}
+
+#startButton {
+  position: absolute;
+  width: -webkit-fill-available;
+  bottom: -20rem;
+}
+
+#addBtn {
+  position: absolute;
+  right: 0;
+  height: -webkit-fill-available;
+}
+
+#addBtn button {
+  border-radius: 0 15px 15px 0 !important;
+  background-color: red !important;
+}
+
+#result {
+  position: absolute;
+  z-index: 10;
+  left: 20%;
+  background-color: #8b0e44f5;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 15%;
+}
+#result2 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: -7rem;
+}
+
+#result2 h2 {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-size: 40px;
+  animation: flicker 1.5s infinite alternate;
+}
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+#result h2 {
+  position: relative;
+  top: 3rem;
+}
+
+/* .test {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  transition: width 5s, height 2s, transform 2s;
+}
+
+.test-op {
+  opacity: 1;
+  transition: width 5s, height 2s, transform 2s;
+  transform: rotate(360deg);
+  width: 400px;
+  height: 140px;
+  background-color: green;
+} */
+/* .test-op:hover {
+  opacity: 1;
+  transition: width 5s, height 2s, transform 2s;
+  transform: rotate(360deg);
+  width: 100px;
+  height: 100px;
+  background-color: green;
+} */
+
+.winner-enter {
+  opacity: 0;
+  transform: scale(4.9);
+}
+.winner-enter-active {
+  opacity: 1;
+  transform: rotate(180deg);
+  transition: opacity 500ms, transform 500ms;
+}
+.winner-exit {
+  opacity: 1;
+}
+.winner-exit-active {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 500ms, transform 500ms;
 }
